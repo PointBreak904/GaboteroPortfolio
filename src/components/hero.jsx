@@ -7,7 +7,7 @@ export class hero extends Component {
       <>
         <div className='body'>
           <div>
-            <h1>Hi I am Rogie Gabotero</h1>
+            <h1>Hi! I am Rogie Gabotero</h1>
             <p>Professional Graphic Designer</p>
           </div>
           <button className='moreBtn'>
