@@ -99,3 +99,51 @@
     background: #d9d9d9;
   }
   
+
+  /* Mobile Styles for About Section */
+@media (max-width: 768px) {
+    .about-container {
+      padding: 20px;
+      padding-top: 200px;
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .about-content {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .about-image {
+      width: 100%;
+      height: auto;
+    }
+  
+    .about-image img {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .about-text h1 {
+      font-size: 2rem;
+    }
+  
+    .about-text p {
+      font-size: 1rem;
+      padding-bottom: 20px;
+    }
+  
+    .about-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .portfolio-btn, .contact-btn {
+      width: 100%;
+    }
+  }
+  

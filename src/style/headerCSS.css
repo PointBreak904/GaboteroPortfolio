@@ -49,3 +49,24 @@
     background-color: rgba(0, 0, 0, 0.167);
     text-decoration: underline;
 }
+
+/* Mobile Styles for Header */
+@media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      padding: 15px 20px;
+    }
+  
+    .nav-list {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+  
+    .nav-list li a {
+      font-size: 18px;
+      padding: 8px 16px;
+    }
+  }
+  
