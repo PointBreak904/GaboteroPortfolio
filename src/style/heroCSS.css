@@ -40,6 +40,11 @@ html, body {
     border: none;
     background-color: rgb(255, 255, 255);
     color: rgb(4, 4, 4);
+    
+}
+
+.moreBtn, link {
+    text-underline-offset: none;
 }
 
 .moreBtn:hover{
@@ -47,3 +52,4 @@ html, body {
     transition: 0.1s;
     color: white;
 }
+

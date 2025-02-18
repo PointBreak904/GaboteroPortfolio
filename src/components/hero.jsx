@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import '../style/heroCSS.css'
 
 export class hero extends Component {
@@ -18,9 +19,11 @@ export class hero extends Component {
             <h1>Hi! I am Rogie Gabotero</h1>
             <p>Professional Graphic Designer</p>
           </div>
+          <Link to="/about">
           <button className='moreBtn'>
-            Get to Know me More 
+           Get to Know me More 
           </button>
+          </Link> 
         </div>
       </motion.div>
     )
