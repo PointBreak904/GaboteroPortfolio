@@ -1,24 +1,23 @@
-import React, { Component } from 'react'
-import '../style/headerCSS.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../style/headerCSS.css';
 
-export class header extends Component {
-  render() {
-    return (
-     <>
+const Header = () => {
+  return (
+    <>
       <header className="header">
-            <div className="logo">My Portfolio</div>
-            <nav>
-                <ul className="nav-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-     </>
-    )
-  }
+        <div className="logo">My Portfolio</div>
+        <nav>
+          <ul className="nav-list">
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/services">Services</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+          </ul>
+        </nav>
+      </header>
+    </>
+  );
 }
 
-export default header
+export default Header;
