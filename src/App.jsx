@@ -74,7 +74,6 @@ function App() {
           id="home"
           ref={heroRef}
           className="fade-section"
-          style={{ opacity: heroOpacity }}
         >
           <Hero />
         </section>
@@ -83,7 +82,6 @@ function App() {
           id="about"
           ref={aboutRef}
           className="fade-section"
-          style={{ opacity: aboutOpacity }}
         >
           <About />
         </section>
@@ -92,7 +90,6 @@ function App() {
           id="skills"
           ref={skillsRef}
           className="fade-section"
-          style={{ opacity: skillsOpacity }}
         >
           <Skills />
         </section>
@@ -101,7 +98,6 @@ function App() {
           id="projects"
           ref={projectsRef}
           className="fade-section"
-          style={{ opacity: projectsOpacity }}
         >
           <Projects />
         </section>

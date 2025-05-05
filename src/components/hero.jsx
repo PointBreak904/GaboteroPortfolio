@@ -13,7 +13,7 @@ export class hero extends Component {
           
           {/* Background wave animation */}
           <DotWave />
-
+          <div className='hero_content'>
           <div className='div_top'>
             <h1>Hi! I am Rogie Gabotero</h1>
             <p>Aspiring Full-Stack Developer</p>
@@ -25,7 +25,7 @@ export class hero extends Component {
           <div className='div_bot'>
             <img className='profile_pic' src={profile} alt="Profile" />
           </div>
-
+          </div>
         </div>
       </motion.div>
     )

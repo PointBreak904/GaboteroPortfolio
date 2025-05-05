@@ -1,10 +1,16 @@
+/* Main container for hero section */
+.hero_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .div_top {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: end;
-    padding-top: 270px;
 }
 
 .div_bot {
@@ -56,48 +62,86 @@
     transform: 0.4s;
 }
 
-
-@media (max-width: 768px) {
-    .body {
-        background-image: url('../assets/profile.png'); /* adjust the path if needed */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        min-height: 100vh;
-        padding: 40px 20px;
-        text-align: center;
-        position: relative;
-      }
-    
-      .div_top {
-        background-color: rgba(255, 255, 255, 0.85); /* optional: improve readability */
-        padding: 20px;
-        border-radius: 12px;
-      }
-    
-  
-    .div_bot {
-      align-items: center;
-      margin-top: 20px;
-    }
-  
-    .profile_pic {
-      max-width: 80%;
-      height: auto;
-      display: none;
-    }
-  
-    .body h1 {
-      font-size: 2rem;
-    }
-  
-    .body p {
-      font-size: 1.2rem;
-    }
-  
-    .moreBtn {
-      padding: 10px 20px;
-      font-size: 1rem;
-    }
+/* Tablet layout (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .div_top {
+    align-items: center;
+    text-align: center;
+    padding-top: 150px;
   }
-  
+
+  .div_bot {
+    justify-content: center;
+  }
+
+  .body h1 {
+    font-size: 2.5rem;
+  }
+
+  .body p {
+    font-size: 1.1rem;
+  }
+
+  .moreBtn {
+    padding: 10px 24px;
+    font-size: 1rem;
+  }
+}
+
+/* Mobile layout (max-width: 768px) */
+@media (max-width: 768px) {
+  .body{
+    max-width:  700px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  html{
+    align-items: center;
+  }
+  .hero_content {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 100vh; /* Fill entire screen height */
+  }
+
+  .div_top {
+    text-align: center;
+    padding-top: 0;
+    z-index: 999999;
+  }
+
+  .div_bot {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .profile_pic {
+    position: absolute;
+    left: -60%;
+    top: 0;
+    max-width: 200%; /* Resize image */
+    z-index: 1;
+  }
+
+  .body h1 {
+    font-size: 2rem; /* Smaller title */
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.791);
+  }
+
+  .body p {
+    font-size: 1.1rem; /* Slightly smaller text */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.77);
+  }
+
+  .moreBtn {
+    width: 100%; /* Make the button full-width */
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
