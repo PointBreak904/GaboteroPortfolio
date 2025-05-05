@@ -28,8 +28,10 @@
   
   .project-card img {
     width: 100%;
-    height: auto;
+    height: 300px;
     border-radius: 6px;
+    object-fit: cover;
+    border: solid 0.5px rgba(87, 87, 87, 0.802);
   }
   
   .project-card h3 {

@@ -1,8 +1,12 @@
 import React from 'react';
 import '../style/projectsCSS.css';
-import project1 from '../assets/project1.jpg';
-import project2 from '../assets/project2.jpg';
-import project3 from '../assets/project3.jpg';
+import project1 from '../assets/project1.png';
+import project2 from '../assets/project2.png';
+import project3 from '../assets/project3.png';
+import project4 from '../assets/project4.png';
+import project5 from '../assets/project5.png';
+import project6 from '../assets/project6.jpg';
+
 
 
 
@@ -17,14 +21,14 @@ const Projects = () => {
     },
     {
       title: "Supply Management System",
-      image: project1,
+      image: project2,
       description: "An inventory and supply tracker built during OJT.",
       repoLink: "https://github.com/PointBreak904/OJT_SUPPLY.git",
       technologies: ["html", "css", "js", "php"]
     },
     {
       title: "Todo List",
-      image: project1,
+      image: project3,
       description: "A collection of weekly React projects for learning UI components.",
       repoLink: "https://github.com/PointBreak904/React_Weekly_Project.git",
       demoLink: "https://todolist904.netlify.app/",
@@ -32,7 +36,7 @@ const Projects = () => {
     },    
     {
       title: "PokeSlayer Game",
-      image: project1,
+      image: project4,
       description: "A React-based game project showcasing API and state management.",
       repoLink: "https://github.com/PointBreak904/React_Weekly_Project_PokeSlayer.git",
       demoLink: "https://pokeslayer.netlify.app/",
@@ -40,14 +44,14 @@ const Projects = () => {
     },
     {
       title: "UExhibiy Art Showcase",
-      image: project1,
+      image: project5,
       description: "Online art gallery showcasing creative works and artist profiles.",
       repoLink: "https://github.com/PointBreak904/UExhibiy_Art_Showcase_Repo.git",
       technologies: ["html", "css", "js", "php"]
     },
     {
       title: "WebCraft",
-      image: project1,
+      image: project6,
       description: "A modern web design portfolio built using HTML/CSS/JS.",
       repoLink: "https://github.com/powiepow/WebCraft-main.git",
       technologies: ["html", "css", "js", "php"]
