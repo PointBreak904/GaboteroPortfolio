@@ -1,0 +1,137 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    scroll-behavior: smooth;
+    background-color: #f5f5f5;
+    font-family: sans-serif;
+  }
+  
+  .body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh; /* FIXED: 'vb' → 'vh' */
+    position: relative;
+  }
+  
+  .fade-section {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+  }
+
+  .bot_menu_container {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    animation: hoverFloat 2s ease-in-out infinite;
+    z-index: 9999999;
+  }
+
+  
+@keyframes hoverFloat {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+  }
+  
+  /* Main button styles (you may already have this) */
+
+.bot_icon{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.bot_icon:hover {
+    transform: scale(1.05);
+}
+
+  .bot_icon_btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    object-fit: contain;
+    border: none;
+  }
+
+  .icon-wrapper {
+    display: flex;
+    flex-direction: column-reverse; /* stack upwards */
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  .icon-btn {
+    position: relative; /* No absolute */
+    transform: scale(0);
+    transition: transform 0.3s ease, opacity 0.3s;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .icon-wrapper.open .icon-btn {
+    transform: scale(1);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .icon-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transform: scale(0);
+    transition: transform 0.3s ease, bottom 0.3s, right 0.3s, opacity 0.3s;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  /* When open, animate buttons into a radial pattern */
+
+  
+  .icon-wrapper.open .icon-btn:nth-child(4) {
+    bottom: 265px;
+    right: 21px;
+  }
+
+  .icon-wrapper.open .icon-btn:nth-child(3) {
+    bottom: 205px;
+    right: 21px;
+  }
+  
+  .icon-wrapper.open .icon-btn:nth-child(2) {
+    bottom: 145px;
+    right: 21px;
+  }
+
+  .icon-wrapper.open .icon-btn:nth-child(1) {
+    bottom: 85px;
+    right: 21px;
+  }
+  
+
+  .icon-wrapper.open .icon-btn:nth-child(1):hover,
+   .icon-wrapper.open .icon-btn:nth-child(2):hover,
+    .icon-wrapper.open .icon-btn:nth-child(3):hover,
+     .icon-wrapper.open .icon-btn:nth-child(4):hover {
+    transform: scale(1.05);
+  }
+  
+  

@@ -2,28 +2,30 @@ import React, { Component } from 'react'
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import '../style/heroCSS.css'
+import profile from '../assets/profile.png'
+import DotWave from '../components/DotWave'; // make sure the path is correct
 
 export class hero extends Component {
   render() {
     return (
-      
-      <motion.div
-      className="hero-container"
-      initial={{ opacity: 0, x: -100 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: 100 }}
-      transition={{ duration: 0.5 }}
-    >
+      <motion.div>
         <div className='body'>
-          <div>
+          
+          {/* Background wave animation */}
+          <DotWave />
+
+          <div className='div_top'>
             <h1>Hi! I am Rogie Gabotero</h1>
-            <p>Professional Graphic Designer</p>
+            <p>Aspiring Full-Stack Developer</p>
+            <a href="#about">
+              <button className='moreBtn'>Get to Know me More</button>
+            </a>
           </div>
-          <Link to="/about">
-          <button className='moreBtn'>
-           Get to Know me More 
-          </button>
-          </Link> 
+
+          <div className='div_bot'>
+            <img className='profile_pic' src={profile} alt="Profile" />
+          </div>
+
         </div>
       </motion.div>
     )

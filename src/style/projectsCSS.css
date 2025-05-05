@@ -1,0 +1,101 @@
+.projects-section {
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .projects-section h2 {
+    margin-bottom: 40px;
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .project-card {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    text-align: start;
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+  
+  .project-card h3 {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #222;
+  }
+  
+  .project-card p {
+    font-size: 0.95em;
+    color: #555;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .project-button {
+    display: inline-block;
+    margin-top: 10px;
+    color: #222;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-button:hover {
+    color: rgb(0, 153, 255);
+  }
+  
+  .button-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .button-divider {
+    margin-top: 10px;
+    width: 2px;
+    height: 15px;
+    background-color: #000000;
+  }
+  
+  
+  .project-button.demo-button {
+    color: #222;
+  }
+  
+  .project-button.demo-button:hover {
+    color: rgb(0, 153, 255);
+  }
+  
+  .tech-icons {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.tech-label {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 0.6em;
+  font-weight: bold;
+  text-transform: uppercase;
+}

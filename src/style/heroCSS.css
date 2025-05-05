@@ -1,26 +1,28 @@
 
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-.body {
+.div_top {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    background-image: url('../assets/profilePicture.jpg');
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 740px;
-    padding-left: 15%;
+    align-items: end;
+    padding-top: 270px;
 }
 
+.div_bot {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.profile_pic {
+    max-width: 900px;
+    max-height: 900px;
+    z-index: 999999;
+} 
+
+
 .body div{
-    padding-top: 30px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .body h1 {
@@ -37,7 +39,7 @@ html, body {
     padding: 8px 15px;
     margin-top: 15px;
     border-radius: 40px;
-    border: none;
+    border: 0.5px solid black;
     background-color: rgb(255, 255, 255);
     color: rgb(4, 4, 4);
     
@@ -50,13 +52,14 @@ html, body {
 .moreBtn:hover{
     background-color: rgb(49, 64, 74);
     transition: 0.1s;
-    color: white;
+    color: rgb(255, 255, 255);
+    transform: 0.4s;
 }
 
-/* Mobile Styles for Hero Section */
+
 @media (max-width: 768px) {
     .body {
-      height: auto;
+      height: 100vh;
     }
 
     .body a{

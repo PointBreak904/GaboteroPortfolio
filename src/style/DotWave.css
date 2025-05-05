@@ -1,0 +1,52 @@
+.dot-wave-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(60, 1fr);
+    grid-template-rows: repeat(30, 1fr);
+    pointer-events: none;
+    opacity: 0.3;
+    padding: 110px 100px 90px 150px;
+  }
+  
+  .dot {
+    width: 6px;
+    height: 6px;
+    background-color: #333;
+    border-radius: 50%;
+    animation: wave 2s ease-in-out infinite;
+  }
+  
+  .dot:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  .dot:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+  
+  .dot:nth-child(5) {
+    animation-delay: 0.8s;
+  }
+  
+  @keyframes wave {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  
