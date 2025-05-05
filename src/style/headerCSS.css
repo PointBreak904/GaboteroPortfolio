@@ -85,8 +85,9 @@
   /* MOBILE RESPONSIVENESS */
   @media (max-width: 768px) {
     .header {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
+      justify-content: space-between;
       padding: 15px 20px;
     }
   
@@ -102,3 +103,70 @@
     }
   }
   
+  /* 🍔 Hamburger button */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10001;
+  color: inherit;
+}
+
+/* By default nav stays visible (desktop) */
+.nav {
+  display: block;
+}
+
+/* MOBILE: Hide nav & show hamburger */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -250px; /* start off screen */
+    height: 100%;
+    width: 250px;
+    background: rgba(32, 32, 32, 0.65);
+    color: white;
+    transition: right 0.3s ease;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 80px;
+  }
+
+  .nav.open {
+    right: 0;
+    
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin: 10px;
+  }
+
+  .nav-list a {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .nav-list li{
+    border-radius: 0;
+    color: white;
+    width: 100%;
+  }
+
+  .header.transparent .nav-list li a {
+    transform: 0.5s;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.791);
+  }
+  
+
+}
