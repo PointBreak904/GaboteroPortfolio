@@ -18,12 +18,6 @@ const About = () => {
           <p>
             I'm a new and passionate programmer currently exploring both front-end and back-end development.
             Through my projects, I’m learning how to build responsive and functional websites.
-            My goal is to grow into a well-rounded developer by turning ideas into useful digital solutions.git i
-            I'm a new and passionate programmer currently exploring both front-end and back-end development.
-            Through my projects, I’m learning how to build responsive and functional websites.
-            My goal is to grow into a well-rounded developer by turning ideas into useful digital solutions.
-            I'm a new and passionate programmer currently exploring both front-end and back-end development.
-            Through my projects, I’m learning how to build responsive and functional websites.
             My goal is to grow into a well-rounded developer by turning ideas into useful digital solutions.
           </p>
 
