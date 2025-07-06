@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import '../style/heroCSS.css'
-import profile from '../assets/profile.png'
+import profile from '../assets/profile.svg'
 import DotWave from '../components/DotWave'; // make sure the path is correct
 
 export class hero extends Component {
